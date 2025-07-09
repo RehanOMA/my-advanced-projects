@@ -1,0 +1,131 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+.avatar {
+  width: 35px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background-image: url('https://wallpapercave.com/wp/wp7418493.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  padding: 70px 30px;
+}
+
+.banner-content {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.banner-description {
+  line-height: 1.3;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.banner-button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgba(51, 51, 51, 0.5);
+  transition: all 0.2s;
+}
+
+.banner-button:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.banner-fade {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(180deg, transparent, #111);
+}
+
+/* Movie rows */
+.row {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posters img {
+  object-fit: contain;
+  width: 180px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.row-posters img:hover {
+  transform: scale(1.08);
+}

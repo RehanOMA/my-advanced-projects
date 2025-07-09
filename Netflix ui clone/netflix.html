@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="netflix.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="User Avatar" class="avatar" />
+  </header>
+
+  <!-- Banner / Hero Section -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">Money Heist</h1>
+      <p class="banner-description">
+        A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history.
+      </p>
+      <div class="banner-buttons">
+        <button class="banner-button">▶ Play</button>
+        <button class="banner-button">+ My List</button>
+      </div>
+    </div>
+    <div class="banner-fade"></div>
+  </section>
+
+  <!-- Movie Rows -->
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters" id="trending">
+      <!-- Movie thumbnails will go here -->
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>Top Picks For You</h2>
+    <div class="row-posters" id="top-picks">
+      <!-- Movie thumbnails will go here -->
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="netflix.js"></script>
+</body>
+</html>
