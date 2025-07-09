@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="editor-container">
+    <header>
+      <h1>💻 Live Code Editor</h1>
+      <button id="download-btn">💾 Download HTML</button>
+    </header>
+
+    <div class="editor-panels">
+      <div class="editor">
+        <h2>HTML</h2>
+        <textarea id="html-code" placeholder="Write HTML here..."></textarea>
+      </div>
+      <div class="editor">
+        <h2>CSS</h2>
+        <textarea id="css-code" placeholder="Write CSS here..."></textarea>
+      </div>
+      <div class="editor">
+        <h2>JavaScript</h2>
+        <textarea id="js-code" placeholder="Write JavaScript here..."></textarea>
+      </div>
+    </div>
+
+    <div class="preview">
+      <h2>Live Preview</h2>
+      <iframe id="preview-frame"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
