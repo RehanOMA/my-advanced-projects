@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced PDF Page Extractor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><i class="fas fa-file-pdf"></i> PDF Page Extractor</h1>
+      <p>Upload a PDF, select the page range, and extract specific pages easily.</p>
+    </header>
+
+    <main>
+      <form id="pdf-form" class="card">
+        <div class="form-group">
+          <label for="pdf-upload"><i class="fas fa-upload"></i> Choose PDF File:</label>
+          <input type="file" id="pdf-upload" accept="application/pdf" required />
+          <small id="file-name">No file chosen</small>
+          <small id="page-info" class="muted"></small>
+        </div>
+
+        <div class="form-group">
+          <label><i class="fas fa-sliders-h"></i> Select Page Range:</label>
+          <div class="range-fields">
+            <input type="number" id="start-page" min="1" placeholder="Start Page" required />
+            <span>to</span>
+            <input type="number" id="end-page" min="1" placeholder="End Page" required />
+          </div>
+        </div>
+
+        <button type="submit" class="extract-btn"><i class="fas fa-file-download"></i> Extract & Download</button>
+      </form>
+
+      <div id="output" class="hidden card output-card">
+        <h3>🎉 Extract Ready!</h3>
+        <p>You can now download the new PDF:</p>
+        <a id="download-link" href="#" download="extracted.pdf" class="download-link">
+          <i class="fas fa-download"></i> Download Extracted PDF
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #6976a0);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Layout */
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Card Container */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+}
+
+#file-name, #page-info {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+#page-info {
+  color: #555;
+}
+
+/* Range Inputs */
+.range-fields {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-fields input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f9fafb;
+  font-size: 1rem;
+}
+
+.range-fields span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Button */
+.extract-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.extract-btn:hover {
+  background-color: #1d4ed8;
+  box-shadow: 3px 3px 25px violet;
+  transform: scale(1.1, 1.1);
+}
+
+/* Output Section */
+.output-card {
+  text-align: center;
+  border-left: 4px solid #10b981;
+}
+
+.output-card h3 {
+  color: #10b981;
+  margin-bottom: 8px;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #10b981;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #0f766e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+footer a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .range-fields {
+    flex-direction: column;
+  }
+
+  .extract-btn {
+    font-size: 0.9rem;
+  }
+}
